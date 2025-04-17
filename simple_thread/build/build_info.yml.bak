@@ -1,0 +1,4 @@
+west:
+  command: /home/kpatil2/zephyrproject/.venv/bin/west build -b nucleo_f746zg .
+  topdir: /home/kpatil2/zephyrproject
+  version: 1.3.0

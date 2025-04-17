@@ -1,0 +1,53 @@
+cmake:
+  application:
+    configuration-dir: /home/kpatil2/zephyrproject/simple_thread
+    source-dir: /home/kpatil2/zephyrproject/simple_thread
+  board:
+    name: nucleo_f746zg
+    path:
+     - /home/kpatil2/zephyrproject/zephyr/boards/st/nucleo_f746zg
+    qualifiers: stm32f746xx
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /home/kpatil2/zephyrproject/zephyr/dts/bindings
+    files:
+     - /home/kpatil2/zephyrproject/zephyr/boards/st/nucleo_f746zg/nucleo_f746zg.dts
+    include-dirs:
+     - /home/kpatil2/zephyrproject/modules/hal/atmel/include
+     - /home/kpatil2/zephyrproject/modules/hal/gigadevice/include
+     - /home/kpatil2/zephyrproject/modules/hal/microchip/include
+     - /home/kpatil2/zephyrproject/modules/hal/microchip/dts
+     - /home/kpatil2/zephyrproject/modules/hal/nuvoton/dts
+     - /home/kpatil2/zephyrproject/modules/hal/nxp/dts
+     - /home/kpatil2/zephyrproject/modules/hal/stm32/dts
+     - /home/kpatil2/zephyrproject/zephyr/include
+     - /home/kpatil2/zephyrproject/zephyr/include/zephyr
+     - /home/kpatil2/zephyrproject/zephyr/dts/common
+     - /home/kpatil2/zephyrproject/zephyr/dts/x86
+     - /home/kpatil2/zephyrproject/zephyr/dts/xtensa
+     - /home/kpatil2/zephyrproject/zephyr/dts/sparc
+     - /home/kpatil2/zephyrproject/zephyr/dts/riscv
+     - /home/kpatil2/zephyrproject/zephyr/dts/posix
+     - /home/kpatil2/zephyrproject/zephyr/dts/nios2
+     - /home/kpatil2/zephyrproject/zephyr/dts/arm64
+     - /home/kpatil2/zephyrproject/zephyr/dts/arm
+     - /home/kpatil2/zephyrproject/zephyr/dts/arc
+     - /home/kpatil2/zephyrproject/zephyr/dts
+  kconfig:
+    files:
+     - /home/kpatil2/zephyrproject/zephyr/boards/st/nucleo_f746zg/nucleo_f746zg_defconfig
+     - /home/kpatil2/zephyrproject/simple_thread/prj.conf
+    user-files:
+     - /home/kpatil2/zephyrproject/simple_thread/prj.conf
+  toolchain:
+    name: zephyr
+    path: /home/kpatil2/zephyr-sdk-0.17.0
+  zephyr:
+    version: 4.1.99
+    zephyr-base: /home/kpatil2/zephyrproject/zephyr
+version: 0.1.0
+west:
+  command: /home/kpatil2/zephyrproject/.venv/bin/west build -b nucleo_f746zg .
+  topdir: /home/kpatil2/zephyrproject
+  version: 1.3.0
